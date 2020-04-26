@@ -7,21 +7,20 @@ def parse_price(sku: str):
         cdiscount_url = "https://www.cdiscount.com/f-0-"
         fetch_url = cdiscount_url + sku + ".html"
 
-        request = requests.get(fetch_url)
         # Make sure we have a correct status code answer
-        if (request.status_code == 200 or request.status_code == '200'):
+        request = requests.get(fetch_url)
+        if (request.status_code == 200):
             parsed_response = BeautifulSoup(request.content, 'html.parser')
             
             if(searchPrice(parsed_response) != False):
                 product_price = searchPrice(parsed_response)
                 return float(product_price)
             else:
-                print("Unable to find a price.")
+                return "Unable to find a price."
         else:
-            print("Unable to reach the url: "+fetch_url)
+            return "Unable to reach the url: "+fetch_url
     else:
-        print("Warning: the passed sku insn't a valid product reference")
-
+        return "Warning: the passed sku insn't a valid product reference"
 
 # Function to search a price in an HTML parsed string
 def searchPrice(string: str):

@@ -27,3 +27,12 @@ For example:
 >>> parse_price(sku)
 1776.6
 ```
+
+## Testing
+
+This project includes few tests maded wiht [unittest](https://docs.python.org/fr/3/library/unittest.html). If you want to run this tests, simply do the following:
+
+```
+$ cd cdiscount
+$ python -m unittest
+```
