@@ -30,7 +30,7 @@ For example:
 
 ## Testing
 
-This project includes few tests maded wiht [unittest](https://docs.python.org/fr/3/library/unittest.html). If you want to run this tests, simply do the following:
+This project includes few tests maded with [unittest](https://docs.python.org/fr/3/library/unittest.html). If you want to run this tests, simply do the following:
 
 ```
 $ cd cdiscount
