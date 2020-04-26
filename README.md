@@ -3,7 +3,7 @@
 This is a [Python](https://www.python.org/) package to extract the price of a given [Cdiscount](https://www.cdiscount.com/) product reference.<br />
 It uses 2 popular Python libraries: [Requests](https://requests.readthedocs.io/en/master/) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup).
 
-![Build Status](https://img.shields.io/pypi/l/requests.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Build Status](https://img.shields.io/pypi/wheel/requests.svg)
 
 
