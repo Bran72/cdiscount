@@ -1,0 +1,7 @@
+README.md
+price_parser.py
+setup.py
+cdiscount.egg-info/PKG-INFO
+cdiscount.egg-info/SOURCES.txt
+cdiscount.egg-info/dependency_links.txt
+cdiscount.egg-info/top_level.txt
