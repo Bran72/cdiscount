@@ -16,7 +16,7 @@ $ pip install requests
 $ pip install BeautifulSoup4
 ```
 
-Also, since a recent update, you're now able to install the script with pip::
+Also, since a recent update, you're now able to install the script with pip:
 
 ```
 $ cd cdiscount
@@ -48,6 +48,7 @@ $ python -m unittest
 ```
 
 Also, to test you can run:
+
 ```
 $ cd cdiscount
 $ python setup.py test
