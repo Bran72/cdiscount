@@ -13,7 +13,7 @@ Above to use this package, please make sure you have the 2 libs *(Requests & Bea
 
 ```
 $ pip install requests
-$ pip install beautifulsoup4
+$ pip install BeautifulSoup4
 ```
 
 Next you'll be able to use the `parse_price(sku)` method to check a product price.<br />
