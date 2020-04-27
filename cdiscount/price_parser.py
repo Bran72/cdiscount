@@ -1,7 +1,12 @@
 import requests
+from flask import Flask
 from bs4 import BeautifulSoup
 
+app = Flask(__name__)
+
+@app.route('/<string:sku>')
 def parse_price(sku: str):
+#def parse_price(sku = 'del5397184246030'):
     # Make sure sku is an str
     if isinstance(sku, str):
         cdiscount_url = "https://www.cdiscount.com/f-0-"
@@ -18,7 +23,8 @@ def parse_price(sku: str):
             else:
                 return "Unable to find a price."
         else:
-            return "Unable to reach the url: "+fetch_url
+            return "Unable to reach the url: "+fetch_url+"\
+                . The status code is "+str(request.status_code)
     else:
         return "Warning: the passed sku insn't a valid product reference"
 
