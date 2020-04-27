@@ -13,13 +13,23 @@ Above to use this package, please make sure you have the 2 libs *(Requests & Bea
 
 ```
 $ pip install requests
-$ pip install beautifulsoup4
+$ pip install BeautifulSoup4
 ```
+
+Also, since a recent update, you're now able to install the script with pip::
+
+```
+$ cd cdiscount
+$ pip install dist/cdiscount-0.0.1-py3-none-any.whl   
+```
+
+## Usage
 
 Next you'll be able to use the `parse_price(sku)` method to check a product price.<br />
 For example:
 
 ```
+$ python
 >>> from cdiscount.price_parser import parse_price
 >>> 
 >>> sku = "del5397184246030" # your product identifier
@@ -35,4 +45,10 @@ This project includes few tests maded with [unittest](https://docs.python.org/fr
 ```
 $ cd cdiscount
 $ python -m unittest
+```
+
+Also, to test you can run:
+```
+$ cd cdiscount
+$ python setup.py test
 ```

@@ -1,7 +1,8 @@
 import random
 import unittest
+import bs4
 from bs4 import BeautifulSoup
-from price_parser import parse_price, searchPrice
+from cdiscount.price_parser import parse_price, searchPrice
 
 class RandomTest(unittest.TestCase):
 

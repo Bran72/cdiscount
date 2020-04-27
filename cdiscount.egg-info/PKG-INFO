@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cdiscount
-Version: 0.1
+Version: 0.0.1
 Summary: A utility package to get any cdiscount product price
 Home-page: https://github.com/Bran72/cdiscount
 Author: Brandon Leininger
@@ -21,8 +21,17 @@ Description: # Python package: cdiscount
         
         ```
         $ pip install requests
-        $ pip install beautifulsoup4
+        $ pip install BeautifulSoup4
         ```
+        
+        Also, since a recent update, you're now able to install the script with pip *(anyway, if the next command doesn't work, you can simply pass this step and go to the 'Usage' section)*:
+        
+        ```
+        $ cd cdiscount
+        $ pip install dist/cdiscount-0.1-py3-none-any.whl
+        ```
+        
+        ## Usage
         
         Next you'll be able to use the `parse_price(sku)` method to check a product price.<br />
         For example:

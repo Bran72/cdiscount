@@ -1,6 +1,7 @@
 README.md
-price_parser.py
 setup.py
+cdiscount/__init__.py
+cdiscount/price_parser.py
 cdiscount.egg-info/PKG-INFO
 cdiscount.egg-info/SOURCES.txt
 cdiscount.egg-info/dependency_links.txt
