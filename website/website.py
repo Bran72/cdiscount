@@ -11,7 +11,6 @@ def home(sku: str = ''):
 
     if sku != '' and isinstance(sku, str):
         product_price = parse_price(sku)
-        print(product_price)
 
         if isinstance(product_price, float):
             html_price = '''<h1 class='success'>

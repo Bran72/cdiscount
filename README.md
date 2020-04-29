@@ -36,7 +36,7 @@ And yeah, as mentioned in your shell, you can access the website via: [http://0.
 
 ### The script
 
-Next you'll be able to use the `parse_price(sku)` method to check a product price.<br />
+You're also able to use the `parse_price(sku)` method to check for a product price.<br />
 For example:
 
 ```
