@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: cdiscount
-Version: 0.0.1
+Version: 1.0.0
 Summary: A utility package to get any cdiscount product price
 Home-page: https://github.com/Bran72/cdiscount
 Author: Brandon Leininger
@@ -20,23 +20,35 @@ Description: # Python package: cdiscount
         Above to use this package, please make sure you have the 2 libs *(Requests & BeautifulSoup)* installed. If not, please run:
         
         ```
-        $ pip install requests
-        $ pip install BeautifulSoup4
-        ```
-        
-        Also, since a recent update, you're now able to install the script with pip *(anyway, if the next command doesn't work, you can simply pass this step and go to the 'Usage' section)*:
-        
-        ```
         $ cd cdiscount
-        $ pip install dist/cdiscount-0.1-py3-none-any.whl
+        $ pip install requests BeautifulSoup4 waitress
+        ```
+        
+        Also, install the script with pip:
+        
+        ```
+        $ pip install dist/cdiscount-1.0.0-py3-none-any.whl   
         ```
         
         ## Usage
+        
+        ### The website
+        Yup. That's not because we're in Python that we don't have the right to a nice a friendly user-interface. <br />
+        So thanks to the next few commands, we'll run a server:
+        
+        ```
+        $ python website/website.py
+        ```
+        And yeah, as mentioned in your shell, you can access the website via: [http://0.0.0.0:8080](http://0.0.0.0:8080) :-)
+        <br />
+        
+        ### The script
         
         Next you'll be able to use the `parse_price(sku)` method to check a product price.<br />
         For example:
         
         ```
+        $ python
         >>> from cdiscount.price_parser import parse_price
         >>> 
         >>> sku = "del5397184246030" # your product identifier
@@ -48,12 +60,17 @@ Description: # Python package: cdiscount
         ## Testing
         
         This project includes few tests maded with [unittest](https://docs.python.org/fr/3/library/unittest.html). If you want to run this tests, simply do the following:
+        > **Warning:** Run this in the main 'cdiscount' path
         
         ```
-        $ cd cdiscount
         $ python -m unittest
         ```
         
+        Also, to test you can run:
+        
+        ```
+        $ python setup.py test
+        ```
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License

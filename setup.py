@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name='cdiscount',  
-    version='0.0.1',
+    version='1.0.0',
     author="Brandon Leininger",
     author_email="brandon.leininger@icloud.com",
     description="A utility package to get any cdiscount product price",

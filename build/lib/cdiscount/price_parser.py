@@ -16,9 +16,10 @@ def parse_price(sku: str):
                 product_price = searchPrice(parsed_response)
                 return float(product_price)
             else:
-                return "Unable to find a price."
+                return "Unable to find a price for the reference "+sku
         else:
-            return "Unable to reach the url: "+fetch_url
+            return "Unable to reach the url: "+fetch_url+"\
+                . The status code is "+str(request.status_code)
     else:
         return "Warning: the passed sku insn't a valid product reference"
 
