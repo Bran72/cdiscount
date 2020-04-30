@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='cdiscount',  
+    name='cdiscount',
     version='1.0.0',
     author="Brandon Leininger",
     author_email="brandon.leininger@icloud.com",
@@ -12,10 +12,10 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Bran72/cdiscount",
-    packages = ['cdiscount'],
+    packages=['cdiscount'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
- )
+)

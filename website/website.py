@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home(sku: str = ''):
     sku = request.args.get('sku')
 
-    if sku != '' and isinstance(sku, str):
+    if (sku != '' and isinstance(sku, str)):
         product_price = parse_price(sku)
 
         if isinstance(product_price, float):
@@ -22,12 +22,13 @@ def home(sku: str = ''):
             return render_template('product.html', error=product_price)
 
     else:
-        if sku is None:
+        if (sku is None):
             return render_template('product.html')
         else:
             error = '''Warning: the passed sku "'''+sku+'''" insn't a
             valid reference'''
             return render_template('product.html', error=error)
+
 
 # Let's define the server
 if __name__ == "__main__":
